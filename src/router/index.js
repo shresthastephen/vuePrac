@@ -1,24 +1,15 @@
-import { createRouter, createWebHistory } from "vue-router";
+// import { createRouter, createWebHistory } from "vue-router";
+// import HomeView from "@/views/HomeView.vue";
 
-// Import your components
-import Hero from "@/components/Hero.vue";
-import HomeCards from "@/components/HomeCards.vue";
-import JobListings from "@/components/JobListings.vue";
+// const router = createRouter({
+//   history: createWebHistory(import.meta.env.BASE_URL),
+//   routes: [
+//     {
+//       path: "/aba",
+//       name: "home",
+//       component: HomeView,
+//     },
+//   ],
+// });
 
-const routes = [
-  { path: "/", name: "Hero", component: Hero },
-  { path: "/about", name: "HomeCards", component: HomeCards },
-  {
-    path: "/job/:id",
-    name: "JobListings",
-    component: JobListings,
-    props: true,
-  },
-];
-
-const router = createRouter({
-  history: createWebHistory(),
-  routes,
-});
-
-export default router;
+// export default router;
