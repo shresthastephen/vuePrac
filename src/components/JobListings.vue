@@ -3,7 +3,15 @@ import JobListing from "./JobListing.vue";
 import jobData from "@/jobs.json"; // Import the JSON data
 import { ref, defineProps } from "vue";
 
-const jobs = ref(jobData.jobs); // Use `ref` for reactive data
+const jobs = ref(jobData.jobs);
+
+defineProps({
+  limit: {
+    type: Number,
+    required: true,
+  },
+});
+// console.log(limit); // Use `ref` for reactive data
 </script>
 
 <template>
